@@ -6,8 +6,7 @@
   xmlns:prism="http://prismlibrary.com"
   prism:ViewModelLocator.AutowireViewModel="True"
   x:Class="RendererTest.Views.PageRendererTestPage"
-  Title="PageRendererTestPage"
-  DownKey="{Binding DownKey.Value}">
+  Title="PageRendererTestPage">
 
   <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
     <Label Text="{Binding DownKeyLabel.Value}"/>
