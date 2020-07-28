@@ -14,7 +14,7 @@
 
   <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
     <Label Text="キーボードを叩いてください。"/>
-    <Label Text="{Binding Key.Value}"/>
+    <Label Text="{Binding KeyHistory.Value}"/>
   </StackLayout>
   
 </renderers:ContentPageCS>
