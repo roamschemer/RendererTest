@@ -1,14 +1,7 @@
-﻿using Prism.Commands;
-using Prism.Mvvm;
-using Prism.Navigation;
+﻿using Prism.Navigation;
 using Reactive.Bindings;
 using Reactive.Bindings.Extensions;
 using RendererTest.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reactive.Linq;
-using Xamarin.Forms;
 
 namespace RendererTest.ViewModels {
     public class PageRendererTestPageViewModel : ViewModelBase {

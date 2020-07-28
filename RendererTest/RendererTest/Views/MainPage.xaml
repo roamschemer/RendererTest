@@ -2,10 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RendererTest.Views.MainPage"
+             xmlns:windows="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"
              Title="RendererTest">
 
   <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-    <Button Text="PageRendererTestPage" CommandParameter="PageRendererTestPage" Command="{Binding Navigation}"/>
+    <Label Text="左Altキーを押すとアクセスキーが表示されます"/>
+    <Button Text="PageRendererTestPage" CommandParameter="PageRendererTestPage" Command="{Binding Navigation}"
+            windows:VisualElement.AccessKey="A"/>
   </StackLayout>
 
 </ContentPage>
