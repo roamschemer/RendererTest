@@ -3,18 +3,17 @@ using Xamarin.Forms;
 
 namespace RendererTest.Renderers {
 
-    public class OnKeyDownEventArgs : EventArgs {
-        /// <summary>押されたキー</summary>
-        public string key;
+    public class KeyDownEventArgs : EventArgs {
+        /// <summary>押されたキー</summary>sya
+        public string Key { get; set; }
     }
 
     public class ContentPageCS : ContentPage {
 
-        public delegate void OnKeyDownEventHandler(object sender, OnKeyDownEventArgs e);
-        public event OnKeyDownEventHandler KeyDown;
+        public delegate void KeyDownEventHandler(object sender, KeyDownEventArgs e);
+        public event KeyDownEventHandler KeyDown;
 
-        public void OnKeyDown(OnKeyDownEventArgs e) {
-            KeyDown?.Invoke(this, e);
-        }
+        public void OnKeyDown(KeyDownEventArgs e) => KeyDown?.Invoke(this, e);
+
     }
 }

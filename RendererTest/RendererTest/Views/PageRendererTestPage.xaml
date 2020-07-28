@@ -8,7 +8,13 @@
   x:Class="RendererTest.Views.PageRendererTestPage"
   Title="PageRendererTestPage">
 
+  <renderers:ContentPageCS.Behaviors>
+    <prism:EventToCommandBehavior EventName="KeyDown" Command="{Binding KeyDownCommand}" EventArgsParameterPath="Key"/>
+  </renderers:ContentPageCS.Behaviors>
+
   <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-    <Label Text="{Binding DownKeyLabel.Value}"/>
+    <Label Text="キーボードを叩いてください。"/>
+    <Label Text="{Binding Key.Value}"/>
   </StackLayout>
+  
 </renderers:ContentPageCS>

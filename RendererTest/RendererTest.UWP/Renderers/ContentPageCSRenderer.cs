@@ -50,8 +50,8 @@ namespace RendererTest.UWP.Renderers {
                         if (s == "226") return "\\";
                         return s;
                     }
-                    var e = new OnKeyDownEventArgs {
-                        key = resKey(args.VirtualKey.ToString())
+                    var e = new KeyDownEventArgs {
+                        Key = resKey(args.VirtualKey.ToString())
                     };
                     myPage.OnKeyDown(e);
                 }
