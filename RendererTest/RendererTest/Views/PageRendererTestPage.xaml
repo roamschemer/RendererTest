@@ -15,6 +15,12 @@
   <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
     <Label Text="キーボードを叩いてください。"/>
     <Label Text="{Binding KeyHistory.Value}"/>
+    <Label Text="{Binding MethodHistory.Value}"/>
+    <StackLayout Orientation="Horizontal">
+      <Button Text="method A" Command="{Binding CommandA}" BackgroundColor="#35856B"/>
+      <Button Text="method B" Command="{Binding CommandB}" BackgroundColor="#35856B"/>
+      <Button Text="method C" Command="{Binding CommandC}" BackgroundColor="#35856B"/>
+    </StackLayout>
   </StackLayout>
   
 </renderers:ContentPageCS>
